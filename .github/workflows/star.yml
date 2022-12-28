@@ -1,0 +1,18 @@
+name: Starring Partner
+on:
+  issues:
+     types: [opened] 
+jobs:
+  # This workflow checks if a user has starred a repository and takes actions
+  starcheck:
+    runs-on: ubuntu-latest
+    steps:
+    - name: Starred?
+      uses: QXIP/please-star-light@v4
+      with:
+        token: ${{ github.token }}
+        autoclose: true
+        # Auto-Apply a label for stargazed users
+        label: "star"
+        message: "Please star this repository!"
+        
