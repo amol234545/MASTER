@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/amol234545/MASTER/issues"
   },
-  "homepage": "https://github.com/amol234545/MASTER#readme"
+  "homepage": "https://github.com/amol234545/MASTER#readme",
+  "dependencies": {
+    "electron": "^22.0.0"
+  }
 }
