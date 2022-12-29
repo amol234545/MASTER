@@ -31,6 +31,8 @@ jobs:
         with:
          file: "/bulid/roconnect.exe"
          suffix: ".exe"
+        env:
+           GITHUB_TOKEN: ${{ env.GITHUB_TOKEN }}
       - run: "Done!"
          
            
