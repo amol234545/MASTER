@@ -27,6 +27,7 @@ jobs:
         with:
           files: /bulid/RoConnect.exe
           name: "RELEASE"
+          tag_name: "release"
       - name: "Delete the bulid folder"
         run: "rm -r bulid"
       - name: "Finished" 
