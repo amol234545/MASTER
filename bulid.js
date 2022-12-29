@@ -2,7 +2,7 @@ const exe = require('@angablue/exe');
 
 const build = exe({
     entry: './main.js',
-    out: './build/RoConnect.exe',
+    out: './build/connect.exe',
     target: 'latest-win-x64'
 });
 
