@@ -12,7 +12,5 @@ jobs:
       with:
         token: ${{ github.token }}
         autoclose: true
-        # Auto-Apply a label for stargazed users
-        label: "star"
         message: "Please star this repository!"
         
