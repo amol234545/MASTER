@@ -17,6 +17,7 @@
   },
   "homepage": "https://github.com/amol234545/MASTER#readme",
   "dependencies": {
+    "@types/node": "^18.11.18",
     "electron": "^22.0.0"
   }
 }
