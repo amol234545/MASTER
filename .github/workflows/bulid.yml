@@ -27,8 +27,6 @@ jobs:
         with:
           files: /bulid/RoConnect.exe
           name: "RELEASE"
-        env:
-           GITHUB_TOKEN: ${{ env.GITHUB_TOKEN }}
       - name: "Delete the bulid folder"
         run: "rm -r bulid"
       - name: "Finished" 
