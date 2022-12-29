@@ -18,7 +18,7 @@ jobs:
       - name: "Node"
         uses: actions/setup-node@v3
       - name: "Run bulid.js"
-        run: "node ./bulid.js"
+        run: "npm run bulid"
       - name: "Releaser"
         uses: nickatnight/releases-action@v2
         with:
