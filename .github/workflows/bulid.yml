@@ -25,7 +25,7 @@ jobs:
       - name: "Releaser"
         uses: softprops/action-gh-release@v1
         with:
-          files: ./bulid/connect.exe
+          files: "/home/runner/work/MASTER/build/connect.exe"
           name: ${{ github.sha }}
           tag_name: "release"
       - name: "Finished" 
