@@ -17,8 +17,6 @@ jobs:
     steps:
       - name: "Bulider"
       - uses: actions/setup-node@v3
-        with:
-           node-version: 16
       - run: "node bulid.js"
       - name: "Releaser"
       - uses: nickatnight/releases-action@v2
