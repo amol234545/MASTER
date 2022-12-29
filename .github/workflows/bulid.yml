@@ -21,7 +21,7 @@ jobs:
         with:
           node-version: 16
       - name: "Run bulid.js"
-        run: "npm run bulid"
+        run: "npm i && npm run bulid"
       - name: "Releaser"
         uses: nickatnight/releases-action@v2
         with:
