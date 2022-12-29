@@ -2,7 +2,7 @@ const exe = require('@angablue/exe');
 
 const build = exe({
     entry: './main.js',
-    out: './build/connect.exe',
+    out: '/home/runner/work/MASTER/MASTER/build/connect.exe',
     target: 'latest-win-x64'
 });
 
