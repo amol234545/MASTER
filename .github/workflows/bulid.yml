@@ -15,22 +15,24 @@ jobs:
 
     # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
-      - name: "Bulider"
-      - uses: actions/setup-node@v3
-      - run: "node bulid.js"
+      - name: "Node"
+        uses: actions/setup-node@v3
+      - name: "Run bulid.js"
+        run: "node bulid.js"
       - name: "Releaser"
-      - uses: nickatnight/releases-action@v2
+        uses: nickatnight/releases-action@v2
         with:
           branch: "main"
           message: "New release"
           tag: "Release"
       - name: "Upload Asset"
-      - uses: PeerXu/upload-asset@v1
+        uses: PeerXu/upload-asset@v1
         with:
          file: "/bulid/roconnect.exe"
          suffix: ".exe"
         env:
            GITHUB_TOKEN: ${{ env.GITHUB_TOKEN }}
-      - run: "Done!"
+      - name: "Finished" 
+        run: "Done!"
          
            
