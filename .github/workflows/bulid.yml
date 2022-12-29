@@ -27,8 +27,8 @@ jobs:
         with:
           files: ./bulid/connect.exe
           name: ${{ github.sha }}
-          tag_name: ${{ github.sha }}
+          tag_name: "release"
       - name: "Finished" 
-        run: "Done!"
+        run: "echo Done!"
          
            
