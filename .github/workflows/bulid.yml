@@ -19,7 +19,7 @@ jobs:
         with:
           node-version: 16
       - name: "Preparation"
-        run: "cd /home/runner/work/MASTER/"
+        run: "cd /home/runner/work/"
       - name: "Run bulid.js"
         run: "npm run bulid"
       - name: "Releaser"
