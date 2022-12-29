@@ -17,6 +17,8 @@ jobs:
     steps:
       - name: "Node"
         uses: actions/setup-node@v3
+        with:
+          node-version: 16
       - name: "Run bulid.js"
         run: "npm run bulid"
       - name: "Releaser"
