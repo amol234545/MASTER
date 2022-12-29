@@ -25,11 +25,9 @@ jobs:
       - name: "Releaser"
         uses: softprops/action-gh-release@v1
         with:
-          files: /bulid/RoConnect.exe
+          files: /bulid/connect.exe
           name: "RELEASE"
           tag_name: "release"
-      - name: "Delete the bulid folder"
-        run: "rm -r bulid"
       - name: "Finished" 
         run: "Done!"
          
