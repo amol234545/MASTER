@@ -19,6 +19,8 @@ jobs:
         uses: actions/setup-node@v3
         with:
           node-version: 16
+      - name: "Preparation"
+        run: "cd /home/runner/work/MASTER/"
       - name: "Run bulid.js"
         run: "npm run bulid"
       - name: "Releaser"
