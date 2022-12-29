@@ -23,16 +23,10 @@ jobs:
       - name: "Run bulid.js"
         run: "npm i && npm run bulid"
       - name: "Releaser"
-        uses: nickatnight/releases-action@v2
+        uses: softprops/action-gh-release@v1
         with:
-          branch: "main"
-          message: "New release"
-          tag: "Release"
-      - name: "Upload Asset"
-        uses: PeerXu/upload-asset@v1
-        with:
-         file: "/bulid/roconnect.exe"
-         suffix: ".exe"
+          files: /bulid/RoConnect.exe
+          name: "RELEASE"
         env:
            GITHUB_TOKEN: ${{ env.GITHUB_TOKEN }}
       - name: "Delete the bulid folder"
