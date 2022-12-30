@@ -23,4 +23,8 @@ jobs:
           name: ${{ github.sha }}
           tag_name: "release"
       - name: "Finished" 
+<<<<<<< HEAD
         run: "echo Done!"
+=======
+        run: "echo Done!"
+>>>>>>> 2889e61d8572ce75c296c5158dfd39c584a815d5
