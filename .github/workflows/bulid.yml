@@ -16,7 +16,7 @@ jobs:
           node-version: 16
       - name: "Run bulid.js"
         run: "npm i && npm run bulid" 
-      - uses: filipstefansson/uuid-action@v1.1
+      - uses: gerred/current-time@v1.0.0
       - name: "Releaser"
         uses: softprops/action-gh-release@v1
         with:
