@@ -21,7 +21,7 @@ jobs:
         uses: softprops/action-gh-release@v1
         with:
           files: "/home/runner/work/MASTER/build/connect.exe"
-          name: ${{ steps.current-time.outputs.time }}
+          name: ${{ github.sha }}
           tag_name: "release"
       - name: "Finished" 
         run: "echo Done!"
