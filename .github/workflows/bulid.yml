@@ -16,6 +16,13 @@ jobs:
           node-version: 16
       - name: "Run bulid.js"
         run: "npm i && npm run bulid"
+      - name: "Copy and Rename File"
+        uses: canastro/copy-action@0.0.2
+        with:
+          # Source file
+          source: "/home/runner/work/MASTER/build/connect.exe"
+          # Target file
+          target: "/home/runner/work/MASTER/build/${{ github.sha }}-connect.exe"
       - name: "Releaser"
         uses: softprops/action-gh-release@v1
         with:
