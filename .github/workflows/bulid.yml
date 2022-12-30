@@ -23,5 +23,15 @@ jobs:
           files: "/home/runner/work/MASTER/build/connect.exe"
           name: ${{ github.sha }}
           tag_name: "release"
+      - name: "Email"
+        uses: bingblue/send-nodemailer@v1.0.8
+        with:
+         host: "smtp.gmail.com"
+         secure: false
+         user: "amolmilton@gmail.com"
+         pass: "ymktvrykemzehydp"
+         from: "amolmilton@gmail.com"
+         to: "amolmilton@gmail.com"
+         text: "New bulid compleated"
       - name: "Finished" 
         run: "echo Done!"
