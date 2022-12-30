@@ -15,14 +15,13 @@ jobs:
         with:
           node-version: 16
       - name: "Run bulid.js"
-        run: "npm i && npm run bulid"
-      - name: "Delete relese"
-        uses: ame-yu/action-delete-latest-release@v2
+        run: "npm i && npm run bulid" 
+      - uses: filipstefansson/uuid-action@v1.1
       - name: "Releaser"
         uses: softprops/action-gh-release@v1
         with:
           files: "/home/runner/work/MASTER/build/connect.exe"
-          name: ${{ github.sha }}
+          name: ${{ steps.generate-uuid.outputs.uuid }}
           tag_name: "release"
       - name: "Finished" 
         run: "echo Done!"
