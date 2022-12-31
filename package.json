@@ -2,9 +2,10 @@
   "name": "master",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "main.js",
   "scripts": {
-    "bulid": "node bulid.js"
+    "bulid": "node bulid.js",
+    "start": "node ."
   },
   "repository": {
     "type": "git",
