@@ -1,9 +1,11 @@
 const prompt = require("prompt-sync")({sigint:true})
 const process = require("node:process")
 const log = console.log
-const warn = console.log
-const error = console.error
+const error = message => {throw new Error(message)}
 function readArgs() {
     return process.argv
 }
-log(readArgs())
+function fixNumber(number) {
+   return number - 1
+}
+log(readArgs()[fixNumber(3)])
