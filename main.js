@@ -6,3 +6,4 @@ const error = console.error
 function readArgs() {
     return process.argv
 }
+log(readArgs())
