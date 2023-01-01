@@ -19,8 +19,6 @@
   "homepage": "https://github.com/amol234545/MASTER#readme",
   "dependencies": {
     "@angablue/exe": "^1.2.0",
-    "fastify": "^4.10.2",
-    "got": "^12.5.3",
     "prompt-sync": "^4.2.0"
   }
 }
