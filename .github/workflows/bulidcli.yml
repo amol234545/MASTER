@@ -1,6 +1,6 @@
 # Bulids code into an .exe and adds it to a github release.
 
-name: "Bulider"
+name: "Bulid cli"
 
 on:
   workflow_dispatch:
@@ -15,7 +15,7 @@ jobs:
         with:
           node-version: 16
       - name: "Run bulid.js"
-        run: "npm i && npm run bulid" 
+        run: "npm i && npm run bulidcli" 
       - name: "Releaser"
         uses: softprops/action-gh-release@v1
         with:

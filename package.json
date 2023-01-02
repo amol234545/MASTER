@@ -4,7 +4,7 @@
   "description": "",
   "main": "main.js",
   "scripts": {
-    "bulid": "node bulid.js",
+    "bulidcli": "node /cli/bulid.js",
     "start": "node ."
   },
   "repository": {
