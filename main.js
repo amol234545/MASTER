@@ -9,4 +9,3 @@ const message = async (apikey,id,message) => {
 const log = console.log
 const error = message => {throw new Error(message)}
 const readArgs = () => process.argv
-to
