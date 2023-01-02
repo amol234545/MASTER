@@ -9,3 +9,15 @@ const message = async (apikey,id,message) => {
 const log = console.log
 const error = message => {throw new Error(message)}
 const readArgs = () => process.argv
+switch (readArgs()[fixNumber(3)]) {
+    case "send": {
+        var ID = readArgs()[fixNumber(4)]
+        var APIKEY = readArgs()[fixNumber(5)]
+        var MESSAGE = readArgs()[fixNumber(6)]
+        message(APIKEY,ID,MESSAGE).then(() => {log("Done")})
+    }
+    default: {
+    log("RoConnect")
+    log("Usage: send ID APIKEY MESSAGE")
+    }
+}
